@@ -1,4 +1,4 @@
-# Finetuning fpr Thinkport
+# Finetuning for Thinkport GmbH
 
 This repository holds training data to finetune and OpenAI model. It also contains a script to convert the training data to the format that the OpenAI model expects.
 
@@ -12,22 +12,18 @@ To install the dependencies, run:
 
 ## Usage
 
-### Training
-
-```python
-python finetune.py --model_name=gpt3 --model_checkpoint=gpt3
-```
-
 ### Validation
 
-```python
-validate.py --model_name=gpt3 --model_checkpoint=gpt3
-```
+It is importend to validate your data to prevent wasting money on training.
 
-### Convert to OpenAI format
+    ```python
+    phyton3 validate.py
+    ```
 
-To convert the training data to the format that the OpenAI model expects, run:
+### Training
 
-```python
-python convert.py --model_name=gpt3 --model_checkpoint=gpt3
-```
+When you are done with validating your data, you can start training.
+
+    ```python
+    python3 finetune.py
+    ```
