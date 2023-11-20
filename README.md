@@ -6,7 +6,7 @@ This repository holds training data to finetune and OpenAI model. It also contai
 
 To install the dependencies, run:
 
-    ```python
+    ```bash
     pip install -r requirements.txt
     ```
 
@@ -16,7 +16,7 @@ To install the dependencies, run:
 
 It is importend to validate your data to prevent wasting money on training.
 
-    ```python
+    ```bash
     phyton3 validate.py
     ```
 
@@ -24,6 +24,6 @@ It is importend to validate your data to prevent wasting money on training.
 
 When you are done with validating your data, you can start training.
 
-    ```python
+    ```bash
     python3 finetune.py
     ```
